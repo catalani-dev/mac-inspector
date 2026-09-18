@@ -1,0 +1,22 @@
+{
+  "extName": {
+    "message": "MAC Inspector",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Shows the vendor of a MAC address when you hover over it, without changing the page.",
+    "description": "Extension description shown in chrome://extensions"
+  },
+  "commandPopup": {
+    "message": "Open the popup with the MAC addresses seen in the tab",
+    "description": "Keyboard shortcut description"
+  },
+  "commandToggleTab": {
+    "message": "Activate or deactivate MAC Inspector in the current tab",
+    "description": "Keyboard shortcut description"
+  },
+  "commandTogglePanel": {
+    "message": "Open or close the side panel",
+    "description": "Keyboard shortcut description"
+  }
+}

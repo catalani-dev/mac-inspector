@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- SPDX-FileCopyrightText: 2026 CatalaniDev <catalanidev@gmail.com> -->
+<!-- SPDX-License-Identifier: LicenseRef-MAC-Inspector-1.0 -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MAC Inspector</title>
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header class="top">
+  <div class="app"><img src="icons/logo-small.svg" alt="">MAC Inspector</div>
+  <button class="btn" id="panelBtn" type="button"></button>
+</header>
+
+<section aria-labelledby="siteName">
+  <div class="site" id="siteName">…</div>
+  <div class="state">
+    <span class="state-text"><span class="dot" id="dot"></span><span id="status">…</span></span>
+    <button class="btn" id="tabBtn" type="button" hidden></button>
+  </div>
+  <div class="switches">
+    <label class="switch"><span id="siteLabel"></span><input type="checkbox" id="siteToggle"></label>
+    <label class="switch"><span data-i18n="popup.alwaysOnAll"></span><input type="checkbox" id="allToggle"></label>
+  </div>
+  <p class="hint" id="accessHint" hidden></p>
+</section>
+
+<section>
+  <form class="search" id="lookupForm">
+    <label class="visually-hidden" for="macIn" data-i18n="popup.searchLabel"></label>
+    <input id="macIn" type="text" data-i18n-placeholder="popup.searchPlaceholder" maxlength="200" spellcheck="false" autocomplete="off">
+    <button class="btn" type="submit" data-i18n="popup.search"></button>
+  </form>
+  <div id="result" aria-live="polite"></div>
+</section>
+
+<section class="history-section">
+  <h2><span id="historyTitle"></span><button class="btn-quiet" id="clearBtn" type="button" data-i18n="common.clear" hidden></button></h2>
+  <ol class="history" id="history"></ol>
+  <p class="empty" id="historyEmpty" data-i18n="popup.historyEmpty"></p>
+</section>
+
+<section class="settings">
+  <label class="switch"><span data-i18n="popup.discreet"></span><input type="checkbox" id="discreetToggle"></label>
+  <p class="hint" data-i18n="popup.discreetHint"></p>
+  <label class="switch"><span data-i18n="popup.language"></span>
+    <select class="select" id="langSelect">
+      <option value="auto" data-i18n="popup.languageAuto"></option>
+      <option value="en" lang="en">English</option>
+      <option value="it" lang="it">Italiano</option>
+    </select>
+  </label>
+</section>
+
+<footer id="footer">
+  <div class="keys" id="keys"></div>
+  <div id="dbInfo"></div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="mac-core.js"></script>
+<script src="ui.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

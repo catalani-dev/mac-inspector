@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- SPDX-FileCopyrightText: 2026 CatalaniDev <catalanidev@gmail.com> -->
+<!-- SPDX-License-Identifier: LicenseRef-MAC-Inspector-1.0 -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About MAC Inspector</title>
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+<main>
+  <header class="app">
+    <img src="icons/logo.svg" alt="">
+    <div>
+      <h1>MAC Inspector</h1>
+      <div class="version" id="version"></div>
+    </div>
+  </header>
+
+  <dl class="facts">
+    <dt>Copyright</dt><dd id="copyright"></dd>
+    <dt>Contact</dt><dd><a href="mailto:catalanidev@gmail.com">catalanidev@gmail.com</a></dd>
+    <dt>License</dt><dd>MAC Inspector License 1.0</dd>
+    <dt>Data</dt><dd id="dbInfo"></dd>
+  </dl>
+
+  <section aria-labelledby="licenseTitle">
+    <h2 id="licenseTitle">License</h2>
+    <div class="doc" id="license"></div>
+  </section>
+
+  <section aria-labelledby="noticeTitle">
+    <h2 id="noticeTitle">Third-party data and trademarks</h2>
+    <div class="doc" id="notice"></div>
+  </section>
+</main>
+
+<script src="i18n.js"></script>
+<script src="ui.js"></script>
+<script src="about.js"></script>
+</body>
+</html>

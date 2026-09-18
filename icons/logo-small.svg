@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <!-- SPDX-FileCopyrightText: 2026 CatalaniDev <catalanidev@gmail.com> -->
+  <!-- SPDX-License-Identifier: LicenseRef-MAC-Inspector-1.0 -->  <!-- Variant of logo.svg drawn for the 16 px toolbar icon: thicker strokes
+       and pixel-aligned octet bars so the glass stays readable. -->
+  <rect x="0" y="0" width="16" height="16" rx="3.5" fill="#2F6FDF"/>
+  <path d="M10 10l3.2 3.2" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="6.75" cy="6.75" r="4.35" fill="#1D2127" stroke="#FFFFFF" stroke-width="1.5"/>
+  <g fill="#FFFFFF" shape-rendering="crispEdges">
+    <rect x="4" y="5" width="1" height="4"/>
+    <rect x="6" y="5" width="1" height="4"/>
+    <rect x="8" y="5" width="1" height="4"/>
+  </g>
+</svg>

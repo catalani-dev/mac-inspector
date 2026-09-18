@@ -1,0 +1,52 @@
+/* SPDX-FileCopyrightText: 2026 CatalaniDev <catalanidev@gmail.com> */
+/* SPDX-License-Identifier: LicenseRef-MAC-Inspector-1.0 */
+
+/* popup.css — toolbar popup layout (shared tokens and components are in ui.css) */
+
+/* Chrome caps popups at 600 px: the history list is the only scrolling area */
+html { overflow: hidden; }
+body { width: 330px; max-height: 600px; display: flex; flex-direction: column; overflow: hidden; }
+body > * { flex: none; }
+body > .history-section { flex: 0 1 auto; min-height: 150px; display: flex; flex-direction: column; }
+.history-section .history { flex: 1 1 auto; min-height: 0; padding-right: 2px; }
+
+.top {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 10px 14px 9px;
+}
+.app { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; }
+.app img { width: 18px; height: 18px; }
+
+section { padding: 10px 14px; border-top: 1px solid var(--line); }
+section > h2 {
+  display: flex; align-items: baseline; justify-content: space-between;
+  font-size: 12px; font-weight: 600; color: var(--muted); margin-bottom: 7px;
+}
+
+/* Current tab */
+.site { font-size: 15px; font-weight: 700; overflow-wrap: anywhere; }
+.state { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 3px 0 9px; }
+.state-text { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12.5px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); flex: none; }
+.dot.on { background: var(--k-vendor); box-shadow: 0 0 0 3px color-mix(in srgb, var(--k-vendor) 22%, transparent); }
+.switches { display: flex; flex-direction: column; gap: 7px; }
+.hint { margin-top: 7px; font-size: 11.5px; color: var(--faint); }
+
+/* Manual lookup */
+.search { display: flex; gap: 6px; }
+.search input {
+  flex: 1; min-width: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 6px;
+  padding: 5px 8px; font: 13px var(--mono);
+}
+.search input::placeholder { font-family: var(--sans); color: var(--faint); }
+.search input:focus { outline: none; border-color: var(--focus); }
+#result:not(:empty) { margin-top: 8px; }
+
+/* Settings */
+.settings { display: flex; flex-direction: column; gap: 7px; }
+.settings .hint { margin-top: -3px; }
+
+footer { padding: 8px 14px 10px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--faint); }
+.keys { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 5px; color: var(--muted); }
+.credit { margin-top: 3px; }

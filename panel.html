@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- SPDX-FileCopyrightText: 2026 CatalaniDev <catalanidev@gmail.com> -->
+<!-- SPDX-License-Identifier: LicenseRef-MAC-Inspector-1.0 -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAC Inspector</title>
+<link rel="stylesheet" href="ui.css">
+<link rel="stylesheet" href="panel.css">
+</head>
+<body>
+<header class="top">
+  <div class="app"><img src="icons/logo-small.svg" alt="">MAC Inspector</div>
+  <div>
+    <span class="mode" id="modeHint" data-i18n="panel.discreet" hidden></span>
+    <button class="btn" id="closeBtn" type="button" data-i18n="panel.close"></button>
+  </div>
+</header>
+
+<main>
+  <section id="current" aria-live="polite" data-i18n-aria-label="panel.currentLabel"></section>
+  <section>
+    <h2><span id="historyTitle"></span><button class="btn-quiet" id="clearBtn" type="button" data-i18n="common.clear" hidden></button></h2>
+    <ol class="history" id="history"></ol>
+  </section>
+</main>
+
+<footer id="footer">
+  <p id="shortcutInfo"></p>
+  <div id="dbInfo"></div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="mac-core.js"></script>
+<script src="ui.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>
