@@ -2,6 +2,11 @@
 
 All notable changes to MAC Inspector are listed here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+### Changed
+- README: installation starts from the ZIP of the latest GitHub release; the source ZIP and `git clone` are listed as alternatives.
+
 ## 3.4.1
 
 ### Added

@@ -57,20 +57,23 @@
 
 MAC Inspector is not published on the Chrome Web Store. Install it from this repository; it takes about a minute.
 
-1. **Download.** On this page click **Code → Download ZIP**, then extract the ZIP to a permanent folder, for example `Documents\mac-inspector`. Chrome loads the extension from that folder every time it starts, so do not delete or move it afterwards.
-   With Git you can clone the repository instead:
+1. **Download.** Open the [latest release](https://github.com/catalani-dev/mac-inspector/releases/latest) and download `mac-inspector-<version>.zip` from **Assets**. It contains only the files the extension needs. Extract it to a permanent folder, for example `Documents\mac-inspector`: Chrome loads the extension from that folder every time it starts, so do not delete or move it afterwards.
 
-   ```bash
-   git clone https://github.com/catalani-dev/mac-inspector.git
-   ```
+   Alternatives, which also include tests, build script and documentation:
+   - on this page click **Code → Download ZIP**, for the current state of the `main` branch;
+   - clone the repository with Git:
+
+     ```bash
+     git clone https://github.com/catalani-dev/mac-inspector.git
+     ```
 
 2. **Open the extensions page.** In Chrome, type `chrome://extensions` in the address bar and turn on **Developer mode** (top right).
-3. **Load the extension.** Click **Load unpacked** and select the folder that contains `manifest.json`. After extracting a ZIP this is usually the inner folder, e.g. `mac-inspector-main`.
+3. **Load the extension.** Click **Load unpacked** and select the folder that contains `manifest.json`. After extracting the release ZIP this is the `mac-inspector-<version>` folder (with **Code → Download ZIP** it is `mac-inspector-main`).
 4. **Pin it.** Open the extensions menu (puzzle icon in the toolbar) and click the pin next to MAC Inspector, so the magnifying glass icon is always visible.
 
 Requires Chrome 120 or later. Other Chromium browsers (Edge, Brave) usually work the same way but are not tested.
 
-**Updating.** Download the new version, replace the files in the same folder, then click the **Reload** arrow on the MAC Inspector card in `chrome://extensions`. Settings are kept.
+**Updating.** Download the ZIP of the new release, replace the files in the same folder, then click the **Reload** arrow on the MAC Inspector card in `chrome://extensions`. Settings are kept.
 
 **Removing.** Click **Remove** on the MAC Inspector card in `chrome://extensions`, then delete the folder.
 
