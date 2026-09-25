@@ -4,6 +4,9 @@ All notable changes to MAC Inspector are listed here. Versions follow [Semantic 
 
 ## Unreleased
 
+### Added
+- Italian translation of the README (`README.it.md`), with a language switch at the top of both files.
+
 ### Changed
 - README: installation starts from the ZIP of the latest GitHub release; the source ZIP and `git clone` are listed as alternatives.
 

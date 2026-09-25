@@ -5,6 +5,10 @@
 <h1 align="center">MAC Inspector</h1>
 
 <p align="center">
+  <strong>English</strong> · <a href="README.it.md">Italiano</a>
+</p>
+
+<p align="center">
   <strong>Hover over a MAC address, see who made the device.</strong><br>
   A Google Chrome extension for ARP tables, DHCP leases, switch and firewall consoles, logs and tickets.
 </p>
